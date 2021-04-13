@@ -1,6 +1,6 @@
 {
     "name": "codeat3/blade-microns",
-    "description": "A package to easily make use of Microns in your Laravel Blade views.",
+    "description": "A package to easily make use of \"Microns Icons\" in your Laravel Blade views. ",
     "keywords": ["Blade", "microns", "Laravel"],
     "homepage": "https://github.com/codeat3/blade-microns",
     "license": "MIT",
