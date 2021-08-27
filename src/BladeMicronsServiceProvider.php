@@ -19,7 +19,6 @@ final class BladeMicronsServiceProvider extends ServiceProvider
 
             $factory->add('microns', array_merge(['path' => __DIR__.'/../resources/svg'], $config));
         });
-
     }
 
     private function registerConfig(): void
@@ -39,5 +38,4 @@ final class BladeMicronsServiceProvider extends ServiceProvider
             ], 'blade-microns-config');
         }
     }
-
 }
