@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Codeat3\BladeMicrons;
 
 use BladeUI\Icons\Factory;
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Container\Container;
+use Illuminate\Support\ServiceProvider;
 
 final class BladeMicronsServiceProvider extends ServiceProvider
 {
@@ -17,24 +17,24 @@ final class BladeMicronsServiceProvider extends ServiceProvider
         $this->callAfterResolving(Factory::class, function (Factory $factory, Container $container) {
             $config = $container->make('config')->get('blade-microns', []);
 
-            $factory->add('microns', array_merge(['path' => __DIR__.'/../resources/svg'], $config));
+            $factory->add('microns', array_merge(['path' => __DIR__ . '/../resources/svg'], $config));
         });
     }
 
     private function registerConfig(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/blade-microns.php', 'blade-microns');
+        $this->mergeConfigFrom(__DIR__ . '/../config/blade-microns.php', 'blade-microns');
     }
 
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../resources/svg' => public_path('vendor/blade-microns'),
+                __DIR__ . '/../resources/svg' => public_path('vendor/blade-microns'),
             ], 'blade-microns');
 
             $this->publishes([
-                __DIR__.'/../config/blade-microns.php' => $this->app->configPath('blade-microns.php'),
+                __DIR__ . '/../config/blade-microns.php' => $this->app->configPath('blade-microns.php'),
             ], 'blade-microns-config');
         }
     }
