@@ -18,7 +18,7 @@ class CompilesIconsTest extends TestCase
 
         // Note: the empty class here seems to be a Blade components bug.
         $expected = <<<'SVG'
-            <svg viewBox="0 0 416 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>bold</title><path d="M214 80Q266 80 299 107 331 134 331 176 331 201 320 222 308 243 291 251L291 253Q319 262 336 284 352 306 352 335 352 377 321 405 290 432 242 432L64 432 64 80 214 80ZM218 224Q239 224 253 211 267 198 267 180 267 164 254 154 240 144 218 144L128 144 128 224 218 224ZM236 368Q258 368 273 357 288 345 288 328 288 309 274 299 259 288 236 288L128 288 128 368 236 368Z" /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 480" fill="currentColor"><title>bold</title><path d="M80 380l125 0q38-1 61-22 23-22 24-58 0-26-14-43-14-18-36-21l0-4q15-5 25-22 10-17 10-36-1-35-27-55-27-19-70-19l-98 0 0 280z m40-40l0-80 89 0q18 0 30 11 11 11 11 29 0 18-11 29-12 11-30 11l-89 0z m0-120l0-80 72 0q19 0 31 11 12 11 12 29 0 18-12 29-12 11-31 11l-72 0z"/></svg>
             SVG;
 
         $this->assertSame($expected, $result);
@@ -30,7 +30,7 @@ class CompilesIconsTest extends TestCase
         $result = svg('microns-bold', 'w-6 h-6 text-gray-500')->toHtml();
 
         $expected = <<<'SVG'
-            <svg class="w-6 h-6 text-gray-500" viewBox="0 0 416 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>bold</title><path d="M214 80Q266 80 299 107 331 134 331 176 331 201 320 222 308 243 291 251L291 253Q319 262 336 284 352 306 352 335 352 377 321 405 290 432 242 432L64 432 64 80 214 80ZM218 224Q239 224 253 211 267 198 267 180 267 164 254 154 240 144 218 144L128 144 128 224 218 224ZM236 368Q258 368 273 357 288 345 288 328 288 309 274 299 259 288 236 288L128 288 128 368 236 368Z" /></svg>
+            <svg class="w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 480" fill="currentColor"><title>bold</title><path d="M80 380l125 0q38-1 61-22 23-22 24-58 0-26-14-43-14-18-36-21l0-4q15-5 25-22 10-17 10-36-1-35-27-55-27-19-70-19l-98 0 0 280z m40-40l0-80 89 0q18 0 30 11 11 11 11 29 0 18-11 29-12 11-30 11l-89 0z m0-120l0-80 72 0q19 0 31 11 12 11 12 29 0 18-12 29-12 11-31 11l-72 0z"/></svg>
             SVG;
 
         $this->assertSame($expected, $result);
@@ -42,7 +42,7 @@ class CompilesIconsTest extends TestCase
         $result = svg('microns-bold', ['style' => 'color: #555'])->toHtml();
 
         $expected = <<<'SVG'
-            <svg style="color: #555" viewBox="0 0 416 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>bold</title><path d="M214 80Q266 80 299 107 331 134 331 176 331 201 320 222 308 243 291 251L291 253Q319 262 336 284 352 306 352 335 352 377 321 405 290 432 242 432L64 432 64 80 214 80ZM218 224Q239 224 253 211 267 198 267 180 267 164 254 154 240 144 218 144L128 144 128 224 218 224ZM236 368Q258 368 273 357 288 345 288 328 288 309 274 299 259 288 236 288L128 288 128 368 236 368Z" /></svg>
+            <svg style="color: #555" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 480" fill="currentColor"><title>bold</title><path d="M80 380l125 0q38-1 61-22 23-22 24-58 0-26-14-43-14-18-36-21l0-4q15-5 25-22 10-17 10-36-1-35-27-55-27-19-70-19l-98 0 0 280z m40-40l0-80 89 0q18 0 30 11 11 11 11 29 0 18-11 29-12 11-30 11l-89 0z m0-120l0-80 72 0q19 0 31 11 12 11 12 29 0 18-12 29-12 11-31 11l-72 0z"/></svg>
             SVG;
 
         $this->assertSame($expected, $result);
@@ -56,7 +56,7 @@ class CompilesIconsTest extends TestCase
         $result = svg('microns-bold')->toHtml();
 
         $expected = <<<'SVG'
-            <svg class="awesome" viewBox="0 0 416 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>bold</title><path d="M214 80Q266 80 299 107 331 134 331 176 331 201 320 222 308 243 291 251L291 253Q319 262 336 284 352 306 352 335 352 377 321 405 290 432 242 432L64 432 64 80 214 80ZM218 224Q239 224 253 211 267 198 267 180 267 164 254 154 240 144 218 144L128 144 128 224 218 224ZM236 368Q258 368 273 357 288 345 288 328 288 309 274 299 259 288 236 288L128 288 128 368 236 368Z" /></svg>
+            <svg class="awesome" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 480" fill="currentColor"><title>bold</title><path d="M80 380l125 0q38-1 61-22 23-22 24-58 0-26-14-43-14-18-36-21l0-4q15-5 25-22 10-17 10-36-1-35-27-55-27-19-70-19l-98 0 0 280z m40-40l0-80 89 0q18 0 30 11 11 11 11 29 0 18-11 29-12 11-30 11l-89 0z m0-120l0-80 72 0q19 0 31 11 12 11 12 29 0 18-12 29-12 11-31 11l-72 0z"/></svg>
             SVG;
 
         $this->assertSame($expected, $result);
@@ -71,7 +71,7 @@ class CompilesIconsTest extends TestCase
         $result = svg('microns-bold', 'w-6 h-6')->toHtml();
 
         $expected = <<<'SVG'
-            <svg class="awesome w-6 h-6" viewBox="0 0 416 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>bold</title><path d="M214 80Q266 80 299 107 331 134 331 176 331 201 320 222 308 243 291 251L291 253Q319 262 336 284 352 306 352 335 352 377 321 405 290 432 242 432L64 432 64 80 214 80ZM218 224Q239 224 253 211 267 198 267 180 267 164 254 154 240 144 218 144L128 144 128 224 218 224ZM236 368Q258 368 273 357 288 345 288 328 288 309 274 299 259 288 236 288L128 288 128 368 236 368Z" /></svg>
+            <svg class="awesome w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 480" fill="currentColor"><title>bold</title><path d="M80 380l125 0q38-1 61-22 23-22 24-58 0-26-14-43-14-18-36-21l0-4q15-5 25-22 10-17 10-36-1-35-27-55-27-19-70-19l-98 0 0 280z m40-40l0-80 89 0q18 0 30 11 11 11 11 29 0 18-11 29-12 11-30 11l-89 0z m0-120l0-80 72 0q19 0 31 11 12 11 12 29 0 18-12 29-12 11-31 11l-72 0z"/></svg>
             SVG;
 
         $this->assertSame($expected, $result);
