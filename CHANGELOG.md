@@ -2,7 +2,16 @@
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
 
-## [Unreleased](https://github.com/codeat3/blade-microns/compare/1.3.0...HEAD)
+## [Unreleased](https://github.com/codeat3/blade-microns/compare/1.4.0...HEAD)
+
+## [1.4.0](https://github.com/codeat3/blade-microns/compare/1.3.0...1.4.0) - 2023-02-27
+
+### What's Changed
+
+- synced with the latest tag [v1.1.2](https://github.com/stephenhutchings/microns/releases/tag/v1.1.2)
+- auto update scripts by @swapnilsarwe in https://github.com/codeat3/blade-microns/pull/4
+
+**Full Changelog**: https://github.com/codeat3/blade-microns/compare/1.3.0...1.4.0
 
 ## [1.3.0](https://github.com/codeat3/blade-microns/compare/1.2.0...1.3.0) - 2023-02-18
 
